@@ -1,0 +1,11 @@
+<div class="container">
+    <input class="form-control" placeholder="Nova tarefa" [(ngModel)]="task">
+    <button class="btn btn-primary ms-2" (click)="addItem(task)">Adicionar</button>
+    <hr>
+    <ul class="list-group" *ngIf="lista.length > 0; else templateElse">
+        <li class="list-group-item" *ngFor="let item of lista">{{ item }}</li>
+    </ul>
+    <ng-template #templateElse>
+        <p>Lista vazia</p>
+    </ng-template>
+</div>
