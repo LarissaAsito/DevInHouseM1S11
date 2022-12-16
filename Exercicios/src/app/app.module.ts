@@ -7,6 +7,7 @@ import { CaptalizePhillipsPipe } from './pipes/captalize-phillips.pipe';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { UrlImagensComponent } from './components/url-imagens/url-imagens.component';
 import { ShowHideComponent } from './components/show-hide/show-hide.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ShowHideComponent } from './components/show-hide/show-hide.component';
     CaptalizePhillipsPipe,
     NavbarComponent,
     UrlImagensComponent,
-    ShowHideComponent
+    ShowHideComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
