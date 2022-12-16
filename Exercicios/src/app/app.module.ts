@@ -8,6 +8,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { UrlImagensComponent } from './components/url-imagens/url-imagens.component';
 import { ShowHideComponent } from './components/show-hide/show-hide.component';
 import { CardComponent } from './components/card/card.component';
+import { ItemValidacaoComponent } from './components/item-validacao/item-validacao.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { CardComponent } from './components/card/card.component';
     NavbarComponent,
     UrlImagensComponent,
     ShowHideComponent,
-    CardComponent
+    CardComponent,
+    ItemValidacaoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

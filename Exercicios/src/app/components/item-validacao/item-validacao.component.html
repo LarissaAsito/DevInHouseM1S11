@@ -1,0 +1,15 @@
+<div>
+    <h3>Digite um número:</h3>
+    <input type="number" [(ngModel)]="num" />
+    <div class="alert alert-success" role="alert" *ngIf="num > 0">
+        Número positivo!
+    </div>
+    <div class="alert alert-primary" role="alert" *ngIf="num == 0; else templateElse">
+        Número igual a 0!
+    </div>
+    <ng-template #templateElse>
+        <div class="alert alert-danger" role="alert">
+            Número negativo!
+        </div>
+    </ng-template>
+</div>
